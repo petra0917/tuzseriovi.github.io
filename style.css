@@ -2,75 +2,50 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <title>Tuzséri Lónyay Pálma Óvoda és Konyha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuzséri Lónyay Pálma Napköziotthonos Óvoda</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: 'Times New Roman', serif;
-            background-color: #ffffff;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #a8d5ba;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            color: #4b3e2c;
-            margin: 0;
-        }
-        nav {
-            background-color: #6b8e23;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 10px 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            padding: 40px;
-            background-color: #f0f8f5;
-            text-align: center;
-        }
-        footer {
-            background-color: #a8d5ba;
-            text-align: center;
-            padding: 10px;
-            font-size: 14px;
-            color: #4b3e2c;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <h1>Tuzséri Lónyay Pálma Napköziotthonos Óvoda és Konyha</h1>
+        <h1>🌿 Tuzséri Lónyay Pálma Napköziotthonos Óvoda és Konyha 🌼</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Kezdőlap</a></li>
+                <li><a href="#dokumentumok">Dokumentumok</a></li>
+                <li><a href="#galeria">Galéria</a></li>
+                <li><a href="#elerhetoseg">Elérhetőség</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#">Kezdőlap</a>
-        <a href="#">Rólunk</a>
-        <a href="#">Dokumentumok</a>
-        <a href="#">Galéria</a>
-        <a href="#">Kapcsolat</a>
-    </nav>
-
     <main>
-        <h2>Üdvözöljük weboldalunkon!</h2>
-        <p>Kedves látogató! Szeretettel köszöntjük a Tuzséri Óvoda hivatalos oldalán.</p>
-        <img src="ovoda.jpg" alt="Óvoda képe" width="60%">
+        <section class="udvozles">
+            <h2>Üdvözlünk az óvoda hivatalos weboldalán!</h2>
+            <img src="ovoda.jpg" alt="Óvoda képe">
+        </section>
+
+        <section id="dokumentumok">
+            <h2>📌 Fontos dokumentumok</h2>
+            <ul>
+                <li><a href="hazirend.pdf" target="_blank">Házirend (PDF)</a></li>
+                <li><a href="etlap.pdf" target="_blank">E heti étlap (PDF)</a></li>
+                <li><a href="#galeria">📷 Képgaléria</a></li>
+            </ul>
+        </section>
+
+        <section id="galeria">
+            <h2>📸 Képgaléria</h2>
+            <div class="galeria">
+                <img src="kep1.jpg" alt="Óvodai élet 1">
+                <img src="kep2.jpg" alt="Óvodai élet 2">
+                <img src="kep3.jpg" alt="Óvodai élet 3">
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>Email: ovodatuzser@gmail.com | Telefon: 06-45-441-036</p>
-        <p>© 2025 Tuzséri Óvoda</p>
+    <footer id="elerhetoseg">
+        <p>📍 4623 Tuzsér &nbsp;&nbsp;&nbsp;📞 Telefon: 06-45-441-036 &nbsp;&nbsp;&nbsp;✉️ Email: <a href="mailto:ovodatuzser@gmail.com">ovodatuzser@gmail.com</a></p>
     </footer>
 </body>
 </html>
