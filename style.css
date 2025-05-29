@@ -1,51 +1,81 @@
-<!DOCTYPE html>
-<html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuzséri Lónyay Pálma Napköziotthonos Óvoda</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>🌿 Tuzséri Lónyay Pálma Napköziotthonos Óvoda és Konyha 🌼</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Kezdőlap</a></li>
-                <li><a href="#dokumentumok">Dokumentumok</a></li>
-                <li><a href="#galeria">Galéria</a></li>
-                <li><a href="#elerhetoseg">Elérhetőség</a></li>
-            </ul>
-        </nav>
-    </header>
+/* Alapstílusok */
+body {
+  margin: 0;
+  font-family: "Times New Roman", serif;
+  background-color: #fefef8;
+  color: #3e3e3e;
+}
 
-    <main>
-        <section class="udvozles">
-            <h2>Üdvözlünk az óvoda hivatalos weboldalán!</h2>
-            <img src="ovoda.jpg" alt="Óvoda képe">
-        </section>
+/* Navigáció */
+.navbar {
+  background-color: #cde4c1; /* pasztell zöld */
+  padding: 10px 0;
+  border-bottom: 4px solid #a17244; /* barna */
+}
 
-        <section id="dokumentumok">
-            <h2>📌 Fontos dokumentumok</h2>
-            <ul>
-                <li><a href="hazirend.pdf" target="_blank">Házirend (PDF)</a></li>
-                <li><a href="etlap.pdf" target="_blank">E heti étlap (PDF)</a></li>
-                <li><a href="#galeria">📷 Képgaléria</a></li>
-            </ul>
-        </section>
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
 
-        <section id="galeria">
-            <h2>📸 Képgaléria</h2>
-            <div class="galeria">
-                <img src="kep1.jpg" alt="Óvodai élet 1">
-                <img src="kep2.jpg" alt="Óvodai élet 2">
-                <img src="kep3.jpg" alt="Óvodai élet 3">
-            </div>
-        </section>
-    </main>
+.menu li {
+  position: relative;
+}
 
-    <footer id="elerhetoseg">
-        <p>📍 4623 Tuzsér &nbsp;&nbsp;&nbsp;📞 Telefon: 06-45-441-036 &nbsp;&nbsp;&nbsp;✉️ Email: <a href="mailto:ovodatuzser@gmail.com">ovodatuzser@gmail.com</a></p>
-    </footer>
-</body>
-</html>
+.menu a {
+  text-decoration: none;
+  color: #3e3e3e;
+  padding: 10px 15px;
+  display: block;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #e4f2db;
+  border-radius: 5px;
+}
+
+/* Lenyíló menü */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fdfdf5;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content li {
+  display: block;
+}
+
+.dropdown-content a {
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Fő tartalom */
+main {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Lábjegyzet */
+footer {
+  background-color: #a17244;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
