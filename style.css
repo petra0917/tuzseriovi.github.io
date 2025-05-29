@@ -1,59 +1,76 @@
-body {
-  font-family: Comic Sans MS, sans-serif;
-  background-color: #fffbe6;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Tuzséri Lónyay Pálma Óvoda és Konyha</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #a8d5ba;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            color: #4b3e2c;
+            margin: 0;
+        }
+        nav {
+            background-color: #6b8e23;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 40px;
+            background-color: #f0f8f5;
+            text-align: center;
+        }
+        footer {
+            background-color: #a8d5ba;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #4b3e2c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tuzséri Lónyay Pálma Napköziotthonos Óvoda és Konyha</h1>
+    </header>
 
-header {
-  background-color: #ffcc70;
-  padding: 1em;
-  border-bottom: 4px dashed #ff9966;
-}
+    <nav>
+        <a href="#">Kezdőlap</a>
+        <a href="#">Rólunk</a>
+        <a href="#">Dokumentumok</a>
+        <a href="#">Galéria</a>
+        <a href="#">Kapcsolat</a>
+    </nav>
 
-h1 {
-  margin: 0;
-  color: #663399;
-}
+    <main>
+        <h2>Üdvözöljük weboldalunkon!</h2>
+        <p>Kedves látogató! Szeretettel köszöntjük a Tuzséri Óvoda hivatalos oldalán.</p>
+        <img src="ovoda.jpg" alt="Óvoda képe" width="60%">
+    </main>
 
-.intro {
-  padding: 2em;
-}
-
-.intro img {
-  width: 300px;
-  border-radius: 12px;
-  margin-top: 1em;
-}
-
-.links {
-  background-color: #e0f7fa;
-  padding: 2em;
-}
-
-.links ul {
-  list-style: none;
-  padding: 0;
-}
-
-.links li {
-  margin: 1em 0;
-}
-
-a {
-  text-decoration: none;
-  color: #00796b;
-  font-weight: bold;
-}
-
-a:hover {
-  color: #004d40;
-}
-
-footer {
-  background-color: #ffcc70;
-  padding: 1em;
-  font-size: 0.9em;
-}
+    <footer>
+        <p>Email: ovodatuzser@gmail.com | Telefon: 06-45-441-036</p>
+        <p>© 2025 Tuzséri Óvoda</p>
+    </footer>
+</body>
+</html>
